@@ -17,7 +17,7 @@
     <url>https://github.com/nrepl/piggieback</url>
     <connection>scm:git:git://github.com/dpsutton/piggieback.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/dpsutton/piggieback.git</developerConnection>
-    <tag>fd99b9e3cfd2069a2484ba9e75dcd1bb04b78ed8</tag>
+    <tag>c4fbfdadb28a0d3c8700901677ab104d59ddbc27</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -76,12 +76,6 @@
       <groupId>org.clojure</groupId>
       <artifactId>clojurescript</artifactId>
       <version>1.9.946</version>
-    </dependency>
-    <dependency>
-      <groupId>org.clojure</groupId>
-      <artifactId>tools.nrepl</artifactId>
-      <version>0.2.13</version>
-      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>
