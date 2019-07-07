@@ -1,4 +1,4 @@
-(ns cider.piggieback.impl
+(ns piggieback.core
   "nREPL middleware enabling the transparent use of a ClojureScript REPL with nREPL tooling."
   {:author "Chas Emerick"}
   (:refer-clojure :exclude (load-file))
@@ -77,7 +77,7 @@
         clojure.lang.Associative
         (containsKey [_ k] (contains? repl-env k))
         (entryAt [_ k] (find repl-env k))
-        (assoc [_ k v] (#'cider.piggieback.impl/delegating-repl-env (assoc repl-env k v)))
+        (assoc [_ k v] (#'piggieback.core/delegating-repl-env (assoc repl-env k v)))
         clojure.lang.IPersistentCollection
         (count [_] (count repl-env))
         (cons [_ entry] (conj repl-env entry))
